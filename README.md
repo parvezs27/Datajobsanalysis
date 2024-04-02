@@ -66,8 +66,6 @@ LIMIT 10;
 
 *Image 2: Query 1 Output*
 
-
-
 **Query Breakdown:**
 
 In this query, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. Additionally, I chose to join the job_postings_fact table to the company_dim table using a left join to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I aliased both tables in the FROM clause as best practice, as when writing longer queries it's ideal to use the alias of tables and columns to shorten code and improve readability. If there was a "name" column in the job_postings_fact table, I would've mentioned the "name" column from the company_dim column in the SELECT statement as "company_dim.name", to show that the name column is coming from the company_dim table and not the job_postings_fact table. In the WHERE clause, I chose to filter by Data Analyst roles only with the location set to "anywhere" (remote jobs), with the salary value not being a null. Finally, I ordered by the salary in descending order (highest to lowest) and limited the output to 10 rows. 
@@ -83,7 +81,7 @@ The results of the query were exported as a CSV file from VS Studio, from there 
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/242e6efd-1395-482d-85e3-2c2d5dfaa590)
 
-*Image 3: *
+*Image 3: Top 10 Data Analyst roles based on average annual salary* 
 
 
 
