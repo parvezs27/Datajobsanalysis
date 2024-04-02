@@ -188,13 +188,19 @@ LIMIT 5;
 *Image 6: Query 3 Output (only the top 5 skills displayed).
 
 
-**Query Breakdown**
+**Query Breakdown:**
 
-The aim of this query was to identify the most in-demand skills for data analysts, by focusing on all job postings, rather than the top paying job postings. In order to do this, I had calculate how many times a skill showed up in the job postings (count of skills). Much of the query will be similar in structure to the main query in Query #2, however instead of the top_paying_jobs CTE, we had to utilise inner joins to connect the job_postings_fact table with the skills_job_dim table, which would then connect to the skills_dim table to retrieve the skill names linked to each job posting. The SELECT statement comprises of the skills column in order to retrieve the skill name, and the COUNT function in order to count how many times each skill appears in job postings. The filters in the WHERE clause will remain the same, as we're still filtering by remote Data Analyst roles. The GROUP BY clause was used due to the COUNT aggregation in the SELECT statement, which will group the count by each skill. Finally, I ordered by the count of skills in descending order (highest to lowest) and limited the output to 5, resulting in only the top 5 most in demand skills.
+The aim of this query was to identify the most in-demand skills for data analysts, by focusing on all job postings, rather than the top paying job postings.
+
+To do this, I had to calculate how many times a skill showed up in the job postings (count of skills). Much of the query was similar in structure to the main query in Query #2, however instead of the top_paying_jobs CTE, I had to utilise inner joins to connect the job_postings_fact table with the skills_job_dim table, which would then connect to the skills_dim table to retrieve the skill names linked to each job posting. 
+
+The SELECT statement comprises of the skills column in order to retrieve the skill name, and the aggregate COUNT function in order to count how many times each skill appears in job postings. The filters in the WHERE clause remained the same, as we are still filtering by remote Data Analyst roles. 
+
+The GROUP BY clause was used due to the COUNT function in the SELECT statement, which will group the count by each skill. Finally, I ordered by the count of skills in descending order (highest to lowest) and limited the output to 5, resulting in only the top 5 most in demand skills being displayed.
 
 **Insights:**
 
-With **SQL** and **Excel** being fundamental data analyst skills, it's no surprise that these skills are the most in demand. This emphasises the need for strong foundational skills in database querying and spreadsheets. **Python**, **Tableau** and **Power BI** are next on the list, showcasing the importance of technical skills in advanced analyses and data visualisation. 
+With SQL and Excel being fundamental Data Analyst skills, it's no surprise that these skills are the most in demand. This emphasises the need for strong foundational skills in database querying and spreadsheets. Python, Tableau and Power Bi are next on the list, showcasing the importance of technical skills in advanced analyses and data visualisation. 
 
 
 ## 4. Skills associated with higher pay
@@ -231,15 +237,17 @@ LIMIT 25;
 
 
 
-**Query Breakdown**
+**Query Breakdown:**
 
 With this query, my aim was to calculate the average yearly salary per skill for Data Analyst roles. 
-The structure of this query is almost identical to Query #3, however instead of using the COUNT function we have used the AVG function in the SELECT statement to get the average salary in job postings, rounded to 2 decimal places using the ROUND function. We will once again query the job_postings_fact table, joined to the skills_job_dim table and skills_dim table in order to connect the skills to each job posting.  
-The filtering in the WHERE clause will remain similar, as we're still interested in remote Data Analyst roles, however, this time I have included the IS NOT NULL operator to filter for roles with a salary value. Since we have used the AVG aggregation in the SELECT statement, we have used a GROUP BY clause to group the average salaries by skill. Finally, the results will be limited to 25 rows, sorted in descending order (highest to lowest) by average salary.
+
+The structure of this query is almost identical to Query #3, however, instead of using the COUNT function, I have used the AVG function in the SELECT statement to get the average salary in job postings, rounded to 2 decimal places using the ROUND function. Once again I had to query the job_postings_fact table, joined to the skills_job_dim table and skills_dim table in order to connect the skills to each job posting.  
+
+The filtering in the WHERE clause remains similar, as I am still interested in remote Data Analyst roles, however, this time I have included the IS NOT NULL operator to filter for roles with a salary value. Since I have used the AVG aggregation in the SELECT statement, a GROUP BY clause has also been used to group the average salaries by skill. Finally, the results will be limited to 25 rows, sorted in descending order (highest to lowest) by average salary.
 
 **Insights:**
 
-The top paying skills revolve around large scale data processing tools such as PySpark and Couchbase, machine learning tools such as DataRobot and Jupyter, Python libraries like Pandas and NumPy and cloud computing tools such as Elasticsearch and Bitbucket. This showcases the high value placed on skills involving big data technologies, predictive modelling and cloud analyics in the Data Analyst job market. 
+The top paying skills revolve around large scale data processing tools such as PySpark and Couchbase, machine learning tools such as DataRobot and Jupyter, Python libraries like Pandas and NumPy and cloud computing tools such as Elasticsearch and Bitbucket. This showcases the high value placed on skills involving big data technologies, predictive modelling and cloud analytics in the Data Analyst job market. 
 
 ## 5. Most optimal skills to learn
 
@@ -339,7 +347,7 @@ Through this project I was able to improve my SQL skills and gain valuable insig
 Some of the best practices I incoporated in this project:
 - Using leading comma's to clearly define new columns in the SELECT statement and to help with readability and identification of missing comma's.
 - Maintaining consistent code structure and alignment between clauses by using the tab key to improve readability of code and familiarity with code style. 
-- Aliasing table names to shorten code.
+- Aliasing table names to shorten code and improve readability.
 - Adding code comments to help others to understand the purpose of the code.
 - Limiting results where needed and using CTE's to enhance query processing speed.
 - Utilising simple, minimalistic bar charts to clearly and easily communicate insights with minimal cognitive load.
