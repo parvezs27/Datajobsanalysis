@@ -77,7 +77,8 @@ In this query, I am querying from the job_postings_fact table, as this table con
 
 The results of the query were exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/a30f0657-0da0-4bb7-96a9-eb6f8c4f32d8)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/242e6efd-1395-482d-85e3-2c2d5dfaa590)
+
 
 
 ## 2. Skills for highest paying jobs
@@ -128,7 +129,8 @@ Out of the top 10 highest paying remote data analyst jobs we found, the top two 
 
 The results of Query #2 were also exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
 
-![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/aa025677-fb1f-4ca1-b93d-ba938051b2a4)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/0d699c22-1923-489c-8392-71784c9d993f)
+
 
 
 **Insights:** 
