@@ -250,7 +250,8 @@ LIMIT 25;
 
 **Output**
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/eb560cb0-d8b7-42db-b6f3-9c7676a63cac)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/6963987c-c055-4b45-8150-930842aeb7ee)
+
 
 
 **Query Breakdown**
