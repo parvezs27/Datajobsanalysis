@@ -34,8 +34,8 @@ The following tools were utilised for the analysis:
 
 * **SQL**: The programming language I used to query the database and extract insights.
 * **PostgreSQL**: The database management system used to handle job posting data.
-* **Visual Studio Code**: The source code editor used for database management and for the execution of SQL queries. Currently the most popular Integrated Development Environment (IDE) on the market due to it's key features such as wide language support, high customisability and large range of extensions to support coding workflow.
-* **Git and Github** Git was the version control system I used to track my project code and revert back to previous versions if something went wrong. To share my project and allow collaboration with peers I used Github.
+* **Visual Studio Code**: The source code editor used for database management and for execution of SQL queries. Currently the most popular Integrated Development Environment (IDE) on the market due to it's key features such as wide language support, high customisability and large range of extensions to support coding workflow.
+* **Git and Github:** Git was the version control system I used to track my project and code and revert back to previous versions if something went wrong. To share my project and allow collaboration with peers I used Github.
 
 # The Analysis
 
@@ -74,7 +74,9 @@ LIMIT 10;
 
 **Query Breakdown:**
 
-In this query, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. Additionally, I chose to join the job_postings_fact table to the company_dim table using a left join to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I aliased both tables in the FROM clause as best practice, as when writing longer queries it's ideal to use the alias of tables and columns to shorten code and improve readability. If there was a "name" column in the job_postings_fact table, I would've mentioned the "name" column from the company_dim column in the SELECT statement as "company_dim.name", to show that the name column is coming from the company_dim table and not the job_postings_fact table. In the WHERE clause, I chose to filter by Data Analyst roles only with the location set to "anywhere" (remote jobs), with the salary value not being a null. Finally, I ordered by the salary in descending order (highest to lowest) and limited the output to 10 rows. 
+In this query, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. Here, I chose to join the job_postings_fact table to the company_dim table using a left join, in order to to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I have aliased the "name" column as "company_name", to show that the name column is coming from the company_dim table. When two columns have the same name in different tables, it's important to alias so the reader knows which table each column is coming from.
+
+In the WHERE clause, I chose to filter by Data Analyst roles only with the location set to "anywhere" (remote jobs), with the salary value not being a null. Finally, I ordered by the salary in descending order (highest to lowest) and limited the output to 10 rows.
 
 **Insights:**
 * **Broad Salary Range:** The top 10 paying Data Analyst roles range from $184,000 to $650,000 USD, indidicating a strong salary potential in the field.
