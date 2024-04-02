@@ -261,7 +261,8 @@ LIMIT 25;
 
 **Output**
 
-![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/6963987c-c055-4b45-8150-930842aeb7ee)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/d1b8def4-1ad5-47d1-b854-1f6458c8307a)
+
 
 *Image 8: Query 5 Output.*
 
@@ -271,15 +272,17 @@ LIMIT 25;
 
 This query aimed to identify "optimal" skills, that is, skills which are in high demand and are also associated with high average salaries for remote Data Analyst roles. Exploring these skills can help with targeting skills that offer job security (high demand) and financial benefits (high salaries).
 
-This query could have been structured differently than above. One way would have been to assign a CTE both Query #3 and Query #4, since we had already found the most in-demand skills and the average salary for skills. These CTE's could have been combined to produce the same output as above. However, doing it this way would have led to lengthy code and I found that the structure I utilised was more efficient and easier to read.
+This query could have been structured differently than above. One way would have been to assign a CTE for both Query #3 and Query #4, since we had already found the most in-demand skills and the average salary for skills. These CTE's could have been combined to produce the same output as above. However, doing it this way would have led to lengthy code and I found that the structure I utilised was more efficient and easier to read.
 
 In the SELECT statement, I wanted to retrieve the skill id, the skill name, the average salary of each skill (rounded to 2 decimal places) and the COUNT of job id's, to count how often each skill appears in job postings. Then in the FROM clause, similar to the previous queries, I joined the job_postings_fact table with the skills_job_dim table, which was then joined with the skills_dim table using inner joins, allowing skills to be connected to each job posting. 
 
-The filters in the WHERE clause remain the same as Query #1 and Query #4, as we're still interested in remote Data Analyst roles with no null values for the salary. However this time round, the HAVING clause has been used as I wanted to filter by the aggregated demand_count column, including only those skills that have shown up more than 10 times in job postings. I found that when I didn't filter for skills that appeared more than 10 times across the job postings, I was left with low demand but high paying skills.
+The filters in the WHERE clause remain the same as Query #1 and Query #4, as we're still interested in remote Data Analyst roles with no null values for the salary. However this time round, the HAVING clause has been used as I wanted to filter by the aggregated demand_count column, including only those skills that have appeared more than 10 times in job postings. I found that when I didn't filter for skills that showed more than 10 times across the job postings, I was left with low demand but high paying skills.
 
 With the COUNT aggregation in the SELECT statement, I also had to use the GROUP BY clause and group by the skill id. Typically, when using the GROUP BY clause you would include all columns in the SELECT statement other than the column being aggregated, however, since I was grouping by a primary key, I didn't need to in this case. 
 
-**Insights**
+**Insights:**
+
+
 
 
 
