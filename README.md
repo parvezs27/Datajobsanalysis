@@ -22,11 +22,13 @@ Below is a simplified entity relationship diagram representing the dataset.
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/ec113c17-bc81-465e-a6e2-7e57240c0238)
 
+*Image 1: Simplified Entity Relation Diagram (ERD) of the data.*
+
 The following tools were utilised for the analysis:
 
 * **SQL**: The programming language I used to query the database and extract insights.
 * **PostgreSQL**: The database management system used to handle job posting data.
-* **Visual Studio Code**: The source code editor used for database management and for the execution of SQL queries. Currently the most popular Integrated Development Environment (IDE) on the market due to it's key features such as support for hundreds of languages, high customisability and wide array of extensions to support coding workflow.
+* **Visual Studio Code**: The source code editor used for database management and for the execution of SQL queries. Currently the most popular Integrated Development Environment (IDE) on the market due to it's key features such as wide language support, high customisability and large range of extensions to support coding workflow.
 * **Git and Github** Git was the version control system I used to track my project code and revert back to previous versions if something went wrong. To share my project and allow collaboration with peers I used Github.
 
 # The Analysis
@@ -62,6 +64,8 @@ LIMIT 10;
 **Output:**
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/80c23400-a26d-4c64-9794-6877b3ee4ec3)
 
+*Image 2: Query 1 Output*
+
 
 
 **Query Breakdown:**
@@ -78,6 +82,8 @@ In this query, I am querying from the job_postings_fact table, as this table con
 The results of the query were exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/242e6efd-1395-482d-85e3-2c2d5dfaa590)
+
+*Image 3: *
 
 
 
