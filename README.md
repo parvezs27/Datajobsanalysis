@@ -232,7 +232,7 @@ The top paying skills revolve around large scale data processing tools such as P
 **Query:**
 
 ```sql
--- Finding the most optimal skills (high demand and high pay)
+-- Finding most optimal skills (high demand and high pay)
 SELECT
   skills_job_dim.skill_id
   , skills_dim.skills 
@@ -257,6 +257,7 @@ ORDER BY
   avg_salary DESC,
   demand_count DESC
 LIMIT 20;
+
 
 ```
 
@@ -315,7 +316,18 @@ If we look at the results from Query #5, the top optimal skills seem to comprise
 
 **Recommendations**
 
-For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills, which are also the most in-demand skills such as SQL, Python and Tableau. With time as these foundational skills are developed and experience accumulates, gaining proficiency in specialised in-demand technologies such as Big Data, Cloud Computing or Machine Learning, will help 
+For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills, which are also the most in-demand skills such as SQL, Python and Tableau. With time as these foundational skills are developed and experience accumulates, gaining proficiency in specialised, in-demand technologies such as Big Data, Cloud Computing or Machine Learning, will help boost career opportunities and earning potential. 
 
+**Learning and Best Practices**
 
+Through this project I was able to improve my SQL skills and gain valuable insights into the Data job market. Specifically, I was able to focus on key SQL skills such as merging tables (joins), using CTE's and aggregate functions (count, average). Additionally, I learned how to utilise Git, Visual Studio Code and Github harmoniously, in order to track projects and push/pull changes to local and remote repositories on Github.
+
+Some of the best practices I incoporated in this project:
+- Using leading comma's to clearly define new columns in the SELECT statement and to help with readability and identification of missing comma's.
+- Maintaining consistent code structure and alignment between clauses by using the tab key to improve readability of code and familiarity with code style. 
+- Aliasing table names to shorten code.
+- Adding code comments to help others to understand the purpose of the code.
+- Limiting results where needed and using CTE's to enhance query processing speed.
+- Utilising simple, minimalistic bar charts to clearly and easily communicate insights with minimal cognitive load.
+- Documenting key project information into a spreadsheet such as commencement date, completion dates, problems and how the problems were resolved. 
 
