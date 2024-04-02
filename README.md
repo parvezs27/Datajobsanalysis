@@ -314,7 +314,7 @@ Business Intelligence and Visualisation tools such as Tableau and Looker show hi
 
 Finally, the demand for database technologies such as Oracle and NoSQL can be seen, with salaries ranging from $101,414 to $104,534, suggesting the importance of database management skills. 
 
-**Conclusions and Recommendations:**
+# Conclusions and Recommendations:
 
 **1. Top paying data analyst jobs:**
 
