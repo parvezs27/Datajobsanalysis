@@ -320,27 +320,27 @@ Finally, the demand for database technologies such as Oracle and NoSQL can be se
 
 There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that job seekers have a variety of paths to choose from with scope for career and salary growth in Data Analytics. 
 
-**2. Required skills for the top paying data analyst jobs**
+**2. Required skills for the top paying data analyst jobs:**
 
 The top paying Data Analyst jobs require proficiency in various skills with SQL being the top skill, followed by Python and Tableau. 
 
-**3. Most in-demand skills for Data Analysts**
+**3. Most in-demand skills for Data Analysts:**
 
 Not only is SQL the top skill for the top paying Data Analyst jobs, but it's also the most in-demand skills for Data Analyst jobs in general. 
 
-**4. Skills associated with higher salaries**
+**4. Skills associated with higher salaries:**
 
 The top 10 highest paying skills are dominated by Big Data (PySpark, Couchbase), Machine Learning (DataRobot, Jupyter) and Cloud Computing technologies (Elasticsearch), suggesting a higher value placed on specialised and niche skills. 
 
-**5. Optimal skills**
+**5. Optimal skills:**
 
 If we look at the results from Query #5, the top optimal skills seem to comprise of Big Data, Cloud Computing and more specialised/niche skills. However, the most in-demand skills required for the top paying jobs seem to comprise of more traditional skills such as SQL, Python and Tableau. 
 
-**Recommendations**
+**Recommendations:**
 
 For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills, which are also the most in-demand skills such as SQL, Python and Tableau. With time as these foundational skills are developed and experience accumulates, gaining proficiency in specialised, in-demand technologies such as Big Data, Cloud Computing or Machine Learning, will help boost career opportunities and earning potential. 
 
-**Learning and Best Practices**
+**Learning and Best Practices:**
 
 Through this project I was able to improve my SQL skills and gain valuable insights into the Data job market. Specifically, I was able to focus on key SQL skills such as merging tables (joins), using CTE's and aggregate functions (count, average). Additionally, I learned how to utilise Git, Visual Studio Code and Github harmoniously, in order to track projects and push/pull changes to local and remote repositories on Github.
 
