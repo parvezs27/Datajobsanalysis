@@ -20,7 +20,7 @@ The dataset can be found [here](https://www.kaggle.com/datasets/lukebarousse/dat
 
 Below is a simplified entity relationship diagram representing the dataset.
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/1870b2c3-f136-4f14-b8d8-c3c61bc0ac14)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/ec113c17-bc81-465e-a6e2-7e57240c0238)
 
 The following tools were utilised for the analysis:
 
@@ -60,7 +60,8 @@ LIMIT 10;
 ```
 
 **Output:**
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/6a2e1e12-624e-4ccb-9886-e554ac5881af)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/80c23400-a26d-4c64-9794-6877b3ee4ec3)
+
 
 
 **Query Breakdown:**
@@ -115,9 +116,8 @@ ORDER BY
 
 **Output (only the first 6 jobs not the full results)**
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/2adad98d-7d12-4648-a3d3-beced77683a6)
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/897ca13f-f911-41e1-9352-e7927074791c)
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/22c3e91b-de16-47bd-8858-d31155b9cd6c)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/df3d1b1f-355d-4cc4-b410-2db6693bc71e)
+
 
 **Query Breakdown**
 Using Query #1 I was able to retrieve the top 10 highest paying remote data analyst jobs. With Query #2 my aim was to look at the skills associated with these top 10 highest paying remote analyst jobs. In order to do this, I had to join the results of Query #1 to the skills_job_dim table which contains the skill id, then join the skills_job_dim table with the skills_dim table to retrieve the skill name. Rather than re-writing Query #1 and using a subquery, I chose to modify it into a CTE (top_paying_jobs) to shorten the code and improve readability. I kept Query #1 the same, as our criteria and conditions were unchanged, but left only the columns for retrieval in the SELECT statement which I felt were relevant in addressing the question. To obtain the skills, I utilised inner joins in the main query to firstly connect the top_paying_jobs CTE to the skills_job_dim table, and then to connect the skills_job_dim table to the skills_dim table. 
@@ -128,7 +128,8 @@ Out of the top 10 highest paying remote data analyst jobs we found, the top two 
 
 The results of Query #2 were also exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/8db00d61-f2cb-4c4e-85e1-2f6b3e3348ca)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/aa025677-fb1f-4ca1-b93d-ba938051b2a4)
+
 
 **Insights:** 
 For the top 8 highest paying remote Data Analyst jobs, after omitting the top two jobs, SQL is a required skill for all 8 roles and leads all the other skills. Generally, a traditional data analyst toolkit comprises of tools such as SQL (to query databases), python (for advanced analyses) or R (for advanced analyses/statistical analyses), tableau (for dashboards and visualisations) and Excel. With these comprising a traditional data analyst toolkit, it makes sense for the top skills to comprise of these skills. More niche skills such as cloud based skills can be expected to be required for lesser roles, as reflected in the visualisation. 
@@ -158,7 +159,8 @@ LIMIT 5;
 
 **Output:**
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/1a62ae2d-ecad-45d6-a709-3a83dc594692)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/38d773e2-eda8-432d-aec2-2016e7a7e697)
+
 
 **Query Breakdown**
 
@@ -195,7 +197,9 @@ LIMIT 25;
 
 Output:
 
-![image](https://github.com/parvezs27/SQL_Project_Analysis/assets/107979122/22bee75e-1f78-40a8-b2a6-150f9ff29579)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/9cc60cf1-be93-46e9-b79a-3418b0095533)
+
+
 
 
 
