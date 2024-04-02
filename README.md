@@ -4,19 +4,25 @@ Data analytics is rapidly growing. The global data analytics market is expected 
 According to [The Future of Jobs 2020 Report](https://www.weforum.org/publications/the-future-of-jobs-report-2020/) developed by the World Economic Forum, more than 80% of the globally surveyed companies in the report have indicated that they'd have well adopted big data by 2025. 
 With data analytics rapidly becoming a core component of businesses globally, the demand for data professionals is also on a rapid increase, with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for data analyst jobs and decribing this growth as "much faster than the average for all occupations". 
 
-Intrigued by these statistics and being in the data analytics field myslef, I wanted to dive deeper into the data job market, with a focus on remote data analyst roles. Specifically, I was interested in exploring the various kinds of data analyst roles, the in-demand and high paying skills for a data analyst, as well as the salary ranges for data analyst roles in the current job market. Through the analysis I will be addressing the following questions of interest:
+Intrigued by these statistics and being in the data analytics field myslef, I wanted to dive deeper into the data job market, with a focus on remote data analyst roles. Specifically, I was interested in exploring the various kinds of data analyst roles, the in-demand and high paying skills for a data analyst, as well as the salary ranges for data analyst roles in the current job market. 
+
+Through the analysis I will be addressing the following questions of interest:
 
 1. What are the highest paying data analyst jobs?
 2. Which skills are required for the highest paying jobs?
 3. Which skills are in top demand for data analysts?
 4. Which skills are associated with higher pay?
-5. Which skills are the most optimal to learn?
+5. Which skills are the most "optimal" to learn?
 
 # The Data and Tools
 
 For this analysis, we are using a pre-cleaned dataset from Kaggle developed by Luke Barousse. This dataset contains scraped job postings from Google search results for Data roles in the United States. The data begins from the 4th November 2022 and updates daily. 
 
 The dataset can be found [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search). 
+
+The SQL queries I used to create the tables can be found here: [sql_load folder](/sql_load/)
+
+The SQL queries I used to address the questions can be found here: [project_sql folder](/project_sql/)
 
 Below is a simplified entity relationship diagram representing the dataset.
 
