@@ -64,7 +64,7 @@ LIMIT 10;
 **Output:**
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/80c23400-a26d-4c64-9794-6877b3ee4ec3)
 
-*Image 2: Query 1 Output.*
+*Image 2: Query 1 Output (top 10 results displayed).*
 
 **Query Breakdown:**
 
@@ -119,11 +119,11 @@ ORDER BY
     salary_year_avg DESC;
 ```
 
-**Output (only the first 3 jobs not the full results)**
+**Output:**
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/df3d1b1f-355d-4cc4-b410-2db6693bc71e)
 
-*Image 4: Query 2 Output.*
+*Image 4: Query 2 Output (only the first 3 jobs displayed).*
 
 
 **Query Breakdown**
@@ -171,7 +171,7 @@ LIMIT 5;
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/38d773e2-eda8-432d-aec2-2016e7a7e697)
 
-*Image 6: Query 3 Output.
+*Image 6: Query 3 Output (only the top 5 skills displayed).
 
 
 **Query Breakdown**
@@ -207,11 +207,11 @@ ORDER BY
 LIMIT 25;
 ```
 
-Output:
+**Output:**
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/9cc60cf1-be93-46e9-b79a-3418b0095533)
 
-*Image 7: Query 4 Output.*
+*Image 7: Query 4 Output (only the top 10 results displayed).*
 
 
 
@@ -255,7 +255,7 @@ HAVING
 ORDER BY
   avg_salary DESC,
   demand_count DESC
-LIMIT 25;
+LIMIT 20;
 
 ```
 
