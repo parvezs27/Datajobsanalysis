@@ -1,4 +1,4 @@
--- Finding the most optimal skills (high demand and high pay)
+-- Finding most optimal skills (high demand and high pay)
 SELECT
   skills_job_dim.skill_id
   , skills_dim.skills 
