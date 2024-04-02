@@ -74,7 +74,7 @@ LIMIT 10;
 
 **Query Breakdown:**
 
-In this query, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. Here, I chose to join the job_postings_fact table to the company_dim table using a left join, in order to to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I have aliased the "name" column as "company_name", to show that the name column is coming from the company_dim table. When two columns have the same name in different tables, it's important to alias so the reader knows which table each column is coming from.
+In this query, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. Here, I chose to join the job_postings_fact table to the company_dim table using a left join, in order to to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I have aliased the "name" column as "company_name", to show that the name column is coming from the company_dim table. When two columns are in different tables but share the same name, it's important to mentioned the table name and/or alias the columns so the reader knows which table each column is coming from.
 
 In the WHERE clause, I chose to filter by Data Analyst roles only with the location set to "anywhere" (remote jobs), with the salary value not being a null. Finally, I ordered by the salary in descending order (highest to lowest) and limited the output to 10 rows.
 
@@ -83,9 +83,9 @@ In the WHERE clause, I chose to filter by Data Analyst roles only with the locat
 * **Employer Diversity:** Top paying Data Analyst jobs span across various industries such as information technology (Meta), telecommunications (AT & T), Marketing/Social Media (Pinterest) and Health (UCLA Health). This portrays that top salaries are available across a range of different industries and aren't limited to a select few. 
 * **Job Title Variation:** There are diverse job titles in the feild including Data Analyst, Principal Data Analyst, Associate Director and Director of Analytics, reflecting the various roles and levels within the field.
 
-**Visualisation**
+**Visualisation:**
 
-The results of the query were exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
+The results of the query were exported as a CSV file from VS Studio Code, from there I visualised the results using Excel. To clarify, I avoided using the "$" dollar sign in the x-axis number labels as too many dollar signs may be distracting. Rather, I chose to mention (USD) in the title to inform that the data is in US Dollars. 
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/242e6efd-1395-482d-85e3-2c2d5dfaa590)
 
@@ -134,14 +134,17 @@ ORDER BY
 *Image 4: Query 2 Output (only the first 3 jobs displayed).*
 
 
-**Query Breakdown**
-Using Query #1 I was able to retrieve the top 10 highest paying remote data analyst jobs. With Query #2 my aim was to look at the skills associated with these top 10 highest paying remote analyst jobs. In order to do this, I had to join the results of Query #1 to the skills_job_dim table which contains the skill id, then join the skills_job_dim table with the skills_dim table to retrieve the skill name. Rather than re-writing Query #1 and using a subquery, I chose to modify it into a CTE (top_paying_jobs) to shorten the code and improve readability. I kept Query #1 the same, as our criteria and conditions were unchanged, but left only the columns for retrieval in the SELECT statement which I felt were relevant in addressing the question. To obtain the skills, I utilised inner joins in the main query to firstly connect the top_paying_jobs CTE to the skills_job_dim table, and then to connect the skills_job_dim table to the skills_dim table. 
+**Query Breakdown:**
 
-Out of the top 10 highest paying remote data analyst jobs we found, the top two jobs (Data Analyst at Mantys and Director of Analytics at Meta), did not have have skills associated with them, hence, these were omitted from the visualisation below. Thereby, the visualisation below showcases the skill count for only the 8 remote data analyst following the top two which we omitted.
+Using Query #1 I was able to retrieve the top 10 highest paying remote data analyst jobs. With Query #2, my aim was to explore the skills associated with these top paying jobs. In order to do this, I had to join the results of Query #1 to the skills_job_dim table which contains the skill id, then join the skills_job_dim table with the skills_dim table to retrieve the skill name. Rather than re-writing Query #1 and using a subquery, I chose to modify it into a CTE (top_paying_jobs) to shorten the code and improve readability. Query #1 was kept the same, as our criteria and conditions were unchanged, but I left only the columns which I felt were relevant in answering the question in the SELECT statement. 
 
-**Visualisation**
+To obtain the skills, I utilised inner joins in the main query to connect the top_paying_jobs CTE to the skills_job_dim table, and then connect the skills_job_dim table to the skills_dim table. 
 
-The results of Query #2 were also exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
+Out of the top 10 highest paying remote data analyst jobs I found earlier, the top two jobs (Data Analyst at Mantys & Director of Analytics at Meta), did not have have skills associated with them, hence, these were omitted from the visualisation below. The visualisation showcases the skill count for only the 8 remote data analyst following the top two which we omitted.
+
+**Visualisation:**
+
+The results of Query #2 were also exported as a CSV file from VS Studio Code and a visusalisation was created using Excel.
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/0d699c22-1923-489c-8392-71784c9d993f)
 
@@ -150,7 +153,10 @@ The results of Query #2 were also exported as a CSV file from VS Studio, from th
 
 
 **Insights:** 
-For the top 8 highest paying remote Data Analyst jobs, after omitting the top two jobs, SQL is a required skill for all 8 roles and leads all the other skills. Generally, a traditional data analyst toolkit comprises of tools such as SQL (to query databases), python (for advanced analyses) or R (for advanced analyses/statistical analyses), tableau (for dashboards and visualisations) and Excel. With these comprising a traditional data analyst toolkit, it makes sense for the top skills to comprise of these skills. More niche skills such as cloud based skills can be expected to be required for lesser roles, as reflected in the visualisation. 
+
+For the top 8 highest paying remote Data Analyst jobs, after omitting the top two jobs, SQL is a leading skill is a required skill for all 8 roles.
+
+Generally, a traditional data analyst toolkit comprises of tools such as SQL (to query databases), Python (for advanced analyses) or R (for advanced analyses/statistical analyses), Tableau (for dashboards and visualisations) and Excel. Therefore, it makes sense for the top skills to comprise of these skills as they're more traditional and foundational skills.
 
 ## 3. The most in-demand skills for Data Analysts
 
