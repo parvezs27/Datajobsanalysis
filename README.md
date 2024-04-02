@@ -26,7 +26,7 @@ The following tools were utilised for the analysis:
 
 * **SQL**: The programming language I used to query the database and extract insights.
 * **PostgreSQL**: The database management system used to handle job posting data.
-* **Visual Studio Code**: The source code editor used for database management and for the exectution of SQL queries. 
+* **Visual Studio Code**: The source code editor used for database management and for the execution of SQL queries. Currently the most popular Integrated Development Environment (IDE) on the market due to it's key features such as support for hundreds of languages, high customisability and wide array of extensions to support coding workflow
 * **Git and Github** The platforms I used for version control, project tracking and sharing my work with peers.
 
 # The Analysis
