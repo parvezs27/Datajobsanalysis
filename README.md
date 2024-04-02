@@ -209,7 +209,8 @@ LIMIT 25;
 
 **Output:**
 
-![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/9cc60cf1-be93-46e9-b79a-3418b0095533)
+![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/ba1a43ac-e4b8-4222-b29b-6291eeef6cf2)
+
 
 *Image 7: Query 4 Output (only the top 10 results displayed).*
 
@@ -290,23 +291,31 @@ Business Intelligence and Visualisation tools such as Tableau and Looker show hi
 
 Finally, the demand for database technologies such as Oracle and NoSQL can be seen, with salaries ranging from $101,414 to $104,534, suggesting the importance of database management skills. 
 
-**Conclusions:**
+**Conclusions and Recommendations:**
 
 **1. Top paying data analyst jobs:**
 
-There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that job seekers have a variety of paths to choose from with scope for career and salary growth.
+There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that job seekers have a variety of paths to choose from with scope for career and salary growth in Data Analytics. 
 
-**2. Skills for the top paying jobs**
+**2. Required skills for the top paying data analyst jobs**
 
-The top paying jobs require proficiency in various skills, with SQL, Python and Tableau being the top 3. 
+The top paying Data Analyst jobs require proficiency in various skills with SQL being the top skill, followed by Python and Tableau. 
 
-3. 
-4. Which skills are in top demand for data analysts?
-5. Which skills are associated with higher pay?
-6. Which skills are the most optimal to learn?
+**3. Most in-demand skills for Data Analysts**
 
+Not only is SQL the top skill for the top paying Data Analyst jobs, but it's also the most in-demand skills for Data Analyst jobs in general. 
 
+**4. Skills associated with higher salaries**
 
+The top 10 highest paying skills are dominated by Big Data (PySpark, Couchbase), Machine Learning (DataRobot, Jupyter) and Cloud Computing technologies (Elasticsearch), suggesting a higher value placed on specialised and niche skills. 
+
+**5. Optimal skills**
+
+If we look at the results from Query #5, the top optimal skills seem to comprise of Big Data, Cloud Computing and more specialised/niche skills. However, the most in-demand skills required for the top paying jobs seem to comprise of more traditional skills such as SQL, Python and Tableau. 
+
+**Recommendations**
+
+For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills, which are also the most in-demand skills such as SQL, Python and Tableau. With time as these foundational skills are developed and experience accumulates, gaining proficiency in specialised in-demand technologies such as Big Data, Cloud Computing or Machine Learning, will help 
 
 
 
