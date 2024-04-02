@@ -64,7 +64,7 @@ LIMIT 10;
 **Output:**
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/80c23400-a26d-4c64-9794-6877b3ee4ec3)
 
-*Image 2: Query 1 Output*
+*Image 2: Query 1 Output.*
 
 **Query Breakdown:**
 
@@ -81,7 +81,7 @@ The results of the query were exported as a CSV file from VS Studio, from there 
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/242e6efd-1395-482d-85e3-2c2d5dfaa590)
 
-*Image 3: Top 10 Data Analyst roles based on average annual salary* 
+*Image 3: Bar Graph for Top 10 Data Analyst roles based on average annual salary.* 
 
 
 
@@ -119,9 +119,11 @@ ORDER BY
     salary_year_avg DESC;
 ```
 
-**Output (only the first 6 jobs not the full results)**
+**Output (only the first 3 jobs not the full results)**
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/df3d1b1f-355d-4cc4-b410-2db6693bc71e)
+
+*Image 4: Query 2 Output.*
 
 
 **Query Breakdown**
@@ -134,6 +136,8 @@ Out of the top 10 highest paying remote data analyst jobs we found, the top two 
 The results of Query #2 were also exported as a CSV file from VS Studio, from there I visualised the results using Excel. 
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/0d699c22-1923-489c-8392-71784c9d993f)
+
+*Image 5: Bar Graph for the count of skills for top 8 Data Analyst roles.*
 
 
 
@@ -166,6 +170,8 @@ LIMIT 5;
 **Output:**
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/38d773e2-eda8-432d-aec2-2016e7a7e697)
+
+*Image 6: Query 3 Output.
 
 
 **Query Breakdown**
@@ -205,6 +211,7 @@ Output:
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/9cc60cf1-be93-46e9-b79a-3418b0095533)
 
+*Image 7: Query 4 Output.*
 
 
 
@@ -255,6 +262,8 @@ LIMIT 25;
 **Output**
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/6963987c-c055-4b45-8150-930842aeb7ee)
+
+*Image 8: Query 5 Output.*
 
 
 
