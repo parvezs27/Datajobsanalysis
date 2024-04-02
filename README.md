@@ -264,7 +264,7 @@ LIMIT 20;
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/d1b8def4-1ad5-47d1-b854-1f6458c8307a)
 
 
-*Image 8: Query 5 Output.*
+*Image 8: Query 5 Output (top 20 results displayed).*
 
 
 
@@ -281,6 +281,29 @@ The filters in the WHERE clause remain the same as Query #1 and Query #4, as we'
 With the COUNT aggregation in the SELECT statement, I also had to use the GROUP BY clause and group by the skill id. Typically, when using the GROUP BY clause you would include all columns in the SELECT statement other than the column being aggregated, however, since I was grouping by a primary key, I didn't need to in this case. 
 
 **Insights:**
+
+Immediately programming languages such as Python and R stand out with high demand counts of 236 and 148 respectively. However, the average salaries for these skills sit lower than some of the other skills, suggesting that whilst proficiency in these programming languages is highly sought out, competency in these skills is more available than the more optimal skills higher up on the list.
+
+Looking at the top 10 results, cloud and big data technologies such as Snowflake, Azure, AWS and Bigquery dominate with demand and high salaries. This isn't surprising as these technologies are rapidly growing in importance, with the cloud computing market expected to grow from $619 billion USD in 2023 to [$1,554 billion USD in 2030](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry/methodology). 
+
+Business Intelligence and Visualisation tools such as Tableau and Looker show high demand counts of 230 and 49 respectively, suggesting the importance of these tools in business intelligence and driving strategic data driven business decisions. 
+
+Finally, the demand for database technologies such as Oracle and NoSQL can be seen, with salaries ranging from $101,414 to $104,534, suggesting the importance of database management skills. 
+
+**Conclusions:**
+
+**1. Top paying data analyst jobs:**
+
+There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that job seekers have a variety of paths to choose from with scope for career and salary growth.
+
+**2. Skills for the top paying jobs**
+
+The top paying jobs require proficiency in various skills, with SQL, Python and Tableau being the top 3. 
+
+3. 
+4. Which skills are in top demand for data analysts?
+5. Which skills are associated with higher pay?
+6. Which skills are the most optimal to learn?
 
 
 
