@@ -116,7 +116,7 @@ WITH top_paying_jobs AS (
         salary_year_avg DESC
     LIMIT 10
 )
--- Skills required for Data Analyst jobs
+-- Skills required for Top Data Analyst jobs
 SELECT 
     top_paying_jobs.*
     , skills
