@@ -156,7 +156,7 @@ The results of Query #2 were also exported as a CSV file from VS Studio Code and
 
 **SQL** was associated with all the top paying jobs, followed by **Python** for 7 and **Tableau** for 6 jobs. 
 
-Generally, a traditional Data Analyst toolkit comprises of tools such as SQL (to query databases), Python (for advanced analyses) or R (for advanced analyses/statistical analyses), Tableau (for dashboards and visualisations) and Microsoft Excel. Therefore, it makes logical sense for the most foundational and important Data Analyst skills to be the repeatedly associated with top paying roles. 
+Generally, a traditional Data Analyst toolkit comprises of tools such as SQL (to query databases), Python (for advanced analyses) or R (for advanced analyses/statistical analyses), Tableau (for dashboards and visualisations) and Microsoft Excel. Therefore, it makes logical sense for the most foundational and important Data Analyst skills to be repeatedly associated with top paying roles. 
 
 ## 3. The most in-demand skills for Data Analysts
 
@@ -185,27 +185,27 @@ LIMIT 5;
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/38d773e2-eda8-432d-aec2-2016e7a7e697)
 
-*Image 6: Query 3 Output (only the top 5 skills displayed).
+*Image 6: Query 3 Output (only the top 5 skills displayed).*
 
 
 **Query Breakdown:**
 
-The aim of this query was to identify the most in-demand skills for Data Analysts, by focusing on all job postings, rather than the top paying job postings.
+The aim of this query was to identify the most in-demand skills for remote Data Analyst roles in general. 
 
-To do this, I had to calculate how many times a skill showed up in the job postings (count of skills). Much of the query was similar in structure to the main query in Query #2, however instead of the top_paying_jobs CTE, I had to utilise inner joins to connect the job_postings_fact table with the skills_job_dim table, which would then connect to the skills_dim table to retrieve the skill names linked to each job posting. 
+To achieve this, I calculated how many times a skill appeared in job postings (count of skills). Much of the query was similar in structure to the main query in Query #2, however, instead of the top_paying_jobs CTE, I utilised inner joins to connect the job_postings_fact table with the skills_job_dim table, which would then connect to the skills_dim table to retrieve the skill names linked to each job posting. 
 
 The SELECT statement comprises of the skills column in order to retrieve the skill name, and the aggregate COUNT function in order to count how many times each skill appears in job postings. The filters in the WHERE clause remained the same, as we are still filtering by remote Data Analyst roles. 
 
-The GROUP BY clause was used due to the COUNT function in the SELECT statement, which will group the count by each skill. Finally, I ordered by the count of skills in descending order (highest to lowest) and limited the output to 5, resulting in only the top 5 most in demand skills being displayed.
+The GROUP BY clause was used due to the COUNT function in the SELECT statement, and, to group the results by the count of skills. Finally, I sorted by the count of skills in descending order (highest to lowest) and limited the output to 5, resulting in only the top 5 most in demand skills being displayed.
 
 **Insights:**
 
-With SQL and Excel being fundamental Data Analyst skills, it's no surprise that these skills are the most in demand. This emphasises the need for strong foundational skills in database querying and spreadsheets. Python, Tableau and Power Bi are next on the list, showcasing the importance of technical skills in advanced analyses and data visualisation. 
+With SQL and Excel being fundamental Data Analyst skills, it's no surprise that these skills are the most demanded. This reflects the need for strong foundational skills in database querying and spreadsheets. Python, Tableau and Power Bi are next on the list, showcasing the importance of advanced analysis and data visualisation skills. 
 
 
 ## 4. Skills associated with higher pay
 
-Query:
+**Query:**
 
 ```sql
 -- Average salary for job postings by individual skill
@@ -239,15 +239,15 @@ LIMIT 25;
 
 **Query Breakdown:**
 
-With this query, my aim was to calculate the average yearly salary per skill for Data Analyst roles. 
+With this query, the aim was to calculate the average yearly salary per skill for Data Analyst roles. 
 
-The structure of this query is almost identical to Query #3, however, instead of using the COUNT function, I have used the AVG function in the SELECT statement to get the average salary in job postings, rounded to 2 decimal places using the ROUND function. Once again I had to query the job_postings_fact table, joined to the skills_job_dim table and skills_dim table in order to connect the skills to each job posting.  
+The structure of this query is almost identical to Query #3, however, instead of using the COUNT function, I have used the AVG function in the SELECT statement to get the average salary in job postings. The results were rounded to 2 decimal places using the ROUND function. Once again, in order to connect the skills to each job posting, I joined the job_postings_fact to the skills_job_dim table, and then to the skills_dim table.
 
-The filtering in the WHERE clause remains similar, as I am still interested in remote Data Analyst roles, however, this time I have included the IS NOT NULL operator to filter for roles with a salary value. Since I have used the AVG aggregation in the SELECT statement, a GROUP BY clause has also been used to group the average salaries by skill. Finally, the results will be limited to 25 rows, sorted in descending order (highest to lowest) by average salary.
+The filtering in the WHERE clause remains similar, as I am still interested in remote Data Analyst roles, however, this time I have included the IS NOT NULL operator to filter for roles with a salary value. Since I have used the AVG aggregation in the SELECT statement, a GROUP BY clause has also been used to group the average salaries by skill. Finally, the results have been limited to 25 rows, sorted in descending order (highest to lowest) by average salary.
 
 **Insights:**
 
-The top paying skills revolve around large scale data processing tools such as PySpark and Couchbase, machine learning tools such as DataRobot and Jupyter, Python libraries like Pandas and NumPy and cloud computing tools such as Elasticsearch and Bitbucket. This showcases the high value placed on skills involving big data technologies, predictive modelling and cloud analytics in the Data Analyst job market. 
+The top paying skills revolve around large scale data processing tools such as PySpark and Couchbase, machine learning tools such as DataRobot and Jupyter, Python libraries like Pandas and NumPy and cloud computing tools such as Elasticsearch and Bitbucket. This showcases that high value is placed on more specialised skills involving big data technologies, predictive modelling and cloud analytics in the Data Analyst job market. 
 
 ## 5. Most optimal skills to learn
 
@@ -283,7 +283,7 @@ LIMIT 20;
 
 ```
 
-**Output**
+**Output:**
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/d1b8def4-1ad5-47d1-b854-1f6458c8307a)
 
@@ -300,13 +300,13 @@ This query could have been structured differently than above. One way would have
 
 In the SELECT statement, I wanted to retrieve the skill id, the skill name, the average salary of each skill (rounded to 2 decimal places) and the COUNT of job id's, to count how often each skill appears in job postings. Then in the FROM clause, similar to the previous queries, I joined the job_postings_fact table with the skills_job_dim table, which was then joined with the skills_dim table using inner joins, allowing skills to be connected to each job posting. 
 
-The filters in the WHERE clause remain the same as Query #1 and Query #4, as we're still interested in remote Data Analyst roles with no null values for the salary. However this time round, the HAVING clause has been used as I wanted to filter by the aggregated demand_count column, including only those skills that have appeared more than 10 times in job postings. I found that when I didn't filter for skills that showed more than 10 times across the job postings, I was left with low demand but high paying skills.
+The filters in the WHERE clause remain the same as Query #1 and Query #4, as we're still interested in remote Data Analyst roles with no null values for the salary. However this time round, the HAVING clause has been used as I wanted to filter by the aggregated demand_count column, including only those skills that have appeared more than 10 times in job postings. I found that when I didn't filter for skills that showed more than 10 times across the job postings, I was left with low demand but high paying skills, which were not the high demand and high paying skills I was after 
 
 With the COUNT aggregation in the SELECT statement, I also had to use the GROUP BY clause and group by the skill id. Typically, when using the GROUP BY clause you would include all columns in the SELECT statement other than the column being aggregated, however, since I was grouping by a primary key, I didn't need to in this case. 
 
 **Insights:**
 
-Immediately programming languages such as Python and R stand out with high demand counts of 236 and 148 respectively. However, the average salaries for these skills sit lower than some of the other skills, suggesting that whilst proficiency in these programming languages is highly sought out, competency in these skills is more available than the more optimal skills higher up on the list.
+Immediately, programming languages such as Python and R stand out with high demand counts of 236 and 148 respectively. However, the average salaries for these skills sit lower than some of the other skills, suggesting that whilst proficiency in these programming languages is highly sought out, competency in these skills is more available than the more optimal skills higher up on the list.
 
 Looking at the top 10 results, cloud and big data technologies such as Snowflake, Azure, AWS and Bigquery dominate with demand and high salaries. This isn't surprising as these technologies are rapidly growing in importance, with the cloud computing market expected to grow from $619 billion USD in 2023 to [$1,554 billion USD in 2030](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry/methodology). 
 
