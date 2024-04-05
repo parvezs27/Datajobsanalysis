@@ -16,7 +16,7 @@ Through the analysis I will be addressing the following questions of interest:
 
 # The Data and Tools
 
-For this analysis, we are using a pre-cleaned dataset from Kaggle developed by Luke Barousse. This dataset contains scraped job postings from Google search results for Data roles in the United States. The data begins from the 4th November 2022 and updates daily. 
+For this analysis, I am using a pre-cleaned dataset from Kaggle developed by Luke Barousse. This dataset contains scraped job postings from Google search results for Data roles in the United States. The data begins from the 4th November 2022 and updates daily. 
 
 The dataset can be found [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search). 
 
@@ -194,7 +194,7 @@ The aim of this query was to identify the most in-demand skills for remote Data 
 
 To achieve this, I calculated how many times a skill appeared in job postings (count of skills). Much of the query was similar in structure to the main query in Query #2, however, instead of the top_paying_jobs CTE, I utilised inner joins to connect the job_postings_fact table with the skills_job_dim table, which would then connect to the skills_dim table to retrieve the skill names linked to each job posting. 
 
-The SELECT statement comprises of the skills column in order to retrieve the skill name, and the aggregate COUNT function in order to count how many times each skill appears in job postings. The filters in the WHERE clause remained the same, as we are still filtering by remote Data Analyst roles. 
+The SELECT statement comprises of the skills column in order to retrieve the skill name, and the aggregate COUNT function in order to count how many times each skill appears in job postings. The filters in the WHERE clause remained the same, as I am still filtering by remote Data Analyst roles. 
 
 The GROUP BY clause was used due to the COUNT function in the SELECT statement, and, to group the results by the count of skills. Finally, I sorted by the count of skills in descending order (highest to lowest) and limited the output to 5, resulting in only the top 5 most in demand skills being displayed.
 
@@ -296,11 +296,11 @@ LIMIT 20;
 
 This query aimed to identify "optimal" skills, that is, skills which are in high demand and are also associated with high average salaries for remote Data Analyst roles. Exploring these skills can help with targeting skills that offer job security (high demand) and financial benefits (high salaries).
 
-This query could have been structured differently than above. One way would have been to assign a CTE for both Query #3 and Query #4, since we had already found the most in-demand skills and the average salary for skills. These CTE's could have been combined to produce the same output as above. However, doing it this way would have led to lengthy code and I found that the structure I utilised was more efficient and easier to read.
+This query could have been structured differently than above. One way would have been to assign a CTE for both Query #3 and Query #4, since I had already found the most in-demand skills and the average salary for skills. These CTE's could have been combined to produce the same output as above. However, doing it this way would have led to lengthy code and I found that the structure I utilised was more efficient and easier to read.
 
 In the SELECT statement, I wanted to retrieve the skill id, the skill name, the average salary of each skill (rounded to 2 decimal places) and the COUNT of job id's, to count how often each skill appears in job postings. Then in the FROM clause, similar to the previous queries, I joined the job_postings_fact table with the skills_job_dim table, which was then joined with the skills_dim table using inner joins, allowing skills to be connected to each job posting. 
 
-The filters in the WHERE clause remain the same as Query #1 and Query #4, as we're still interested in remote Data Analyst roles with no null values for the salary. However this time round, the HAVING clause has been used as I wanted to filter by the aggregated demand_count column, including only those skills that have appeared more than 10 times in job postings. I found that when I didn't filter for skills that showed more than 10 times across the job postings, I was left with low demand but high paying skills, which were not the high demand and high paying skills I was after 
+The filters in the WHERE clause remain the same as Query #1 and Query #4, as I'm still interested in remote Data Analyst roles with no null values for the salary. However this time round, the HAVING clause has been used as I wanted to filter by the aggregated demand_count column, including only those skills that have appeared more than 10 times in job postings. I found that when I didn't filter for skills that showed more than 10 times across the job postings, I was left with low demand but high paying skills, which were not the high demand and high paying skills I was after 
 
 With the COUNT aggregation in the SELECT statement, I also had to use the GROUP BY clause and group by the skill id. Typically, when using the GROUP BY clause you would include all columns in the SELECT statement other than the column being aggregated, however, since I was grouping by a primary key, I didn't need to in this case. 
 
@@ -308,25 +308,27 @@ With the COUNT aggregation in the SELECT statement, I also had to use the GROUP 
 
 Immediately, programming languages such as Python and R stand out with high demand counts of 236 and 148 respectively. However, the average salaries for these skills sit lower than some of the other skills, suggesting that whilst proficiency in these programming languages is highly sought out, competency in these skills is more available than the more optimal skills higher up on the list.
 
-Looking at the top 10 results, cloud and big data technologies such as Snowflake, Azure, AWS and Bigquery dominate with demand and high salaries. This isn't surprising as these technologies are rapidly growing in importance, with the cloud computing market expected to grow from $619 billion USD in 2023 to [$1,554 billion USD in 2030](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry/methodology). 
+Looking at the top 10 results, cloud and big data technologies such as Snowflake, Azure, AWS and BigQuery dominate with demand and high salaries. This isn't surprising as these technologies are rapidly growing in importance, with the cloud computing market expected to grow from $619 billion USD in 2023 to [$1,554 billion USD in 2030](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry/methodology). 
 
-Business Intelligence and Visualisation tools such as Tableau and Looker show high demand counts of 230 and 49 respectively, suggesting the importance of these tools in business intelligence and driving strategic data driven business decisions. 
+Business Intelligence and Visualisation tools such as Tableau and Looker show high demand counts of 230 and 49 respectively, suggesting the importance of these tools in business intelligence and strategically driving business decisions. 
 
-Finally, the demand for database technologies such as Oracle and NoSQL can be seen, with salaries ranging from $101,414 to $104,534, suggesting the importance of database management skills. 
+Finally, the demand for database technologies such as Oracle and NoSQL can be seen, with salaries ranging from $101,414 to $104,534, suggesting the importance of database skills (querying, manipulation, management). 
 
 # Conclusions and Recommendations:
 
+Below are the conclusions I derived from the analysis, as well as a recommendation based on the findings for aspiring or current Data Analysts.
+
 **1. Top paying Data Analyst jobs:**
 
-There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that job seekers have a variety of paths to choose from with scope for career and salary growth in Data Analytics. 
+There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that Data Analysts have strong scope for career and salary growth, whilst having the flexbility to choose an area of interest for specialisation.
 
 **2. Required skills for the top paying Data Analyst jobs:**
 
-The top paying Data Analyst jobs require proficiency in various skills with SQL being the top skill, followed by Python and Tableau. 
+The top paying Data Analyst jobs require proficiency in various skills with SQL being the top required skill, followed by Python and Tableau. 
 
 **3. Most in-demand skills for Data Analysts:**
 
-Not only is SQL the top skill for the top paying Data Analyst jobs, but it's also the most in-demand skills for Data Analyst jobs in general. 
+Not only is SQL the top skill for the top paying Data Analyst jobs, but it's also the most in-demand skill for Data Analyst jobs in general, followed by Excel and Python. 
 
 **4. Skills associated with higher salaries:**
 
@@ -334,22 +336,22 @@ The top 10 highest paying skills are dominated by Big Data (PySpark, Couchbase),
 
 **5. Optimal skills:**
 
-If we look at the results from Query #5, the top optimal skills seem to comprise of Big Data, Cloud Computing and more specialised/niche skills. However, the most in-demand skills required for the top paying jobs seem to comprise of more traditional skills such as SQL, Python and Tableau. 
+The most optimal (high demand and high pay) skills comprise of Big Data, Cloud Computing and more specialised/niche skills.
 
 **Recommendations:**
 
-For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills, which are also the most in-demand skills such as SQL, Python and Tableau. With time as these foundational skills are developed and experience accumulates, gaining proficiency in specialised, in-demand technologies such as Big Data, Cloud Computing or Machine Learning, will help boost career opportunities and earning potential. 
+For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills like SQL, Python and Tableau. These skills are the most in-demand skills for remote Data Analyst roles and are also associated with the top paying jobs. With time, as these foundational skills are developed and experience accumulates, gaining proficiency in specialised, in-demand technologies such as Big Data, Cloud Computing or Machine Learning, can help boost career opportunities and earning potential.
 
-**Learning and Best Practices:**
+**Learnings and Best Practices:**
 
 Through this project I was able to improve my SQL skills and gain valuable insights into the Data job market. Specifically, I was able to focus on key SQL skills such as merging tables (joins), using CTE's and aggregate functions (count, average). Additionally, I learned how to utilise Git, Visual Studio Code and Github harmoniously, in order to track projects and push/pull changes to local and remote repositories on Github.
 
-Some of the best practices I incoporated in this project:
-- Using leading comma's to clearly define new columns in the SELECT statement and to help with readability and identification of missing comma's.
-- Maintaining consistent code structure and alignment between clauses by using the tab key to improve readability of code and familiarity with code style. 
+Some of the best practices I incoporated into this project:
+- Using leading comma's in the SELECT statements of queries, to clearly define new columns and to improve code readability and debugging e.g. identification of missing comma's.
+- Maintaining consistent code structure and alignment between clauses by using the tab key, in order to improve readability of code and build familiarity with code style. 
 - Aliasing table names to shorten code and improve readability.
-- Adding code comments to help others to understand the purpose of the code.
+- Adding code comments to help viewers/peers in understanding the purpose of the code/query.
 - Limiting results where needed and using CTE's to enhance query processing speed.
 - Utilising simple, minimalistic bar charts to clearly and easily communicate insights with minimal cognitive load.
-- Documenting key project information into a spreadsheet such as commencement date, completion dates, problems and how the problems were resolved. 
+- Documenting key project information into a spreadsheet such as commencement date, completion date, problems and how the problems were resolved. This is a good practice to have in the real world when working on deliverables and projects. 
 
