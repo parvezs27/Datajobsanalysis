@@ -79,13 +79,13 @@ Here, I am querying from the job_postings_fact table, as this table contains the
 In the WHERE clause, I filtered by "Data Analyst" roles only with the location set to "anywhere" (remote jobs) and the salary value not being a null. Finally, I sorted the results by salary in descending order (highest to lowest) and limited the output to display only 10 rows.
 
 **Insights:**
-* **Broad Salary Range:** The top 10 paying Data Analyst roles range from $184,000 to $650,000 USD, indidicating strong salary potential in the field.
-* **Employer Diversity:** Top paying Data Analyst jobs span across various industries such as information technology (Meta), telecommunications (AT & T), Marketing/Social Media (Pinterest), Health (UCLA Health) and others. This portrays that top salaries are available across a range of different industries and aren't limited to a select few. 
-* **Job Title Variation:** There are diverse job titles in the feild including Data Analyst, Principal Data Analyst, Associate Director and Director of Analytics, reflecting the various roles and levels within the field.
+* **Broad Salary Range:** The top 10 paying Data Analyst roles range from $184,000 to $650,000 USD, indicating strong salary potential in the field.
+* **Employer Diversity:** Top paying Data Analyst jobs span across various industries such as Information Technology (Meta), Telecommunications (AT & T), Marketing/Social Media (Pinterest), Health (UCLA Health) and others. This portrays that top paying Data Analyst jobs are available across a range of different industries and aren't limited to a select few. 
+* **Job Title Variation:** There are diverse job titles in the field including Data Analyst, Principal Data Analyst, Associate Director and Director of Analytics, reflecting the various roles and levels within the Data Analytics field. 
 
 **Visualisation:**
 
-The results of the query were exported as a CSV file from VS Studio Code, from there I visualised the results using Excel. To clarify, I avoided using the "$" dollar sign in the x-axis number labels, and opted to mention (USD) in the title to keep the visualisation de-cluttered and inform that the currency is USD. 
+The results of the query were exported as a CSV file from VS Studio Code and visualised using Excel. To clarify, I avoided using the "$" dollar sign in the x-axis number labels, and opted to mention (USD) in the title to keep the visualisation de-cluttered.
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/242e6efd-1395-482d-85e3-2c2d5dfaa590)
 
