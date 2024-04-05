@@ -2,15 +2,15 @@
 
 The field of data analytics is going through a rapid growth phase. The global data analytics market is expected to increase from $23 billion USD in 2019 to [$133 billion USD by 2026](https://www.globenewswire.com/news-release/2021/02/08/2171129/0/en/Data-Analytics-Market-to-Hit-USD-132-90-Billion-by-2026-North-America-Region-to-Spearhead-the-Global-Data-Analytics-Industry-with-the-Projected-CAGR-of-26-4.html).
 According to [The Future of Jobs 2020 Report](https://www.weforum.org/publications/the-future-of-jobs-report-2020/) developed by the World Economic Forum, more than 80% of the globally surveyed companies in the report have indicated that they'd have well adopted big data by 2025. 
-With data analytics swiftly becoming a core component of businesses globally, the demand for data professionals is also accelerating , with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for data analyst jobs, and decribing this growth as "much faster than the average for all occupations". 
+With data analytics swiftly becoming a core component of businesses globally, the demand for data professionals is also accelerating , with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for Data Analyst jobs, and decribing this growth as "much faster than the average for all occupations". 
 
-Intrigued by these statistics and being in the data analytics field myself, I wanted to dive deeper into the data job market, with a particular focus on remote data analyst roles. Specifically, I was interested in exploring the various kinds of data analyst roles, the in-demand and high paying skills for a data analyst, as well as the salary ranges for data analyst roles in the current job market. 
+Intrigued by these statistics and being in the data analytics field myself, I wanted to dive deeper into the data job market, with a particular focus on remote Data Analyst roles. Specifically, I was interested in exploring the various kinds of Data Analyst roles, the in-demand and high paying skills for a Data Analyst, as well as the salary ranges for Data Analyst roles in the current job market. 
 
 Through the analysis I will be addressing the following questions of interest:
 
-1. What are the highest paying data analyst jobs?
+1. What are the highest paying Data Analyst jobs?
 2. Which skills are required for the highest paying jobs?
-3. Which skills are in top demand for data analysts?
+3. Which skills are in top demand for Data Analysts?
 4. Which skills are associated with higher pay?
 5. Which skills are the most "optimal" to learn?
 
@@ -136,11 +136,11 @@ ORDER BY
 
 **Query Breakdown:**
 
-Using Query #1 I was able to retrieve the top 10 highest paying remote data analyst jobs. With Query #2, my aim was to explore the skills associated with these top paying jobs. In order to do this, I had to join the results of Query #1 to the skills_job_dim table which contains the skill id, then join the skills_job_dim table with the skills_dim table to retrieve the skill name. Rather than re-writing Query #1 and using a subquery, I chose to modify it into a CTE (top_paying_jobs) to shorten the code and improve readability. Query #1 was kept the same, as our criteria and conditions were unchanged, but I left only the columns which I felt were relevant in answering the question in the SELECT statement. 
+Using Query #1 I was able to retrieve the top 10 highest paying remote Data Analyst jobs. With Query #2, my aim was to explore the skills associated with these top paying jobs. In order to do this, I had to join the results of Query #1 to the skills_job_dim table which contains the skill id, then join the skills_job_dim table with the skills_dim table to retrieve the skill name. Rather than re-writing Query #1 and using a subquery, I chose to modify it into a CTE (top_paying_jobs) to shorten the code and improve readability. Query #1 was kept the same, as our criteria and conditions were unchanged, only the columns which I felt were relevant in answering the question were listed in the SELECT statement. 
 
 To obtain the skills, I utilised inner joins in the main query to connect the top_paying_jobs CTE to the skills_job_dim table, and then connect the skills_job_dim table to the skills_dim table. 
 
-Out of the top 10 highest paying remote data analyst jobs I found earlier, the top two jobs (Data Analyst at Mantys & Director of Analytics at Meta), did not have have skills associated with them, hence, these were omitted from the visualisation below. The visualisation showcases the skill count for only the 8 remote data analyst following the top two which we omitted.
+Out of the top 10 highest paying remote Data Analyst jobs I found earlier, the top two jobs (Data Analyst at Mantys & Director of Analytics at Meta), did not have have skills associated with them, hence, these were omitted from the visualisation below. The visualisation showcases the skill count for only the 8 remote Data Analyst following the top two which we omitted.
 
 **Visualisation:**
 
@@ -156,7 +156,7 @@ The results of Query #2 were also exported as a CSV file from VS Studio Code and
 
 For the top 8 highest paying remote Data Analyst jobs, after omitting the top two jobs, SQL is a leading skill is a required skill for all 8 roles.
 
-Generally, a traditional data analyst toolkit comprises of tools such as SQL (to query databases), Python (for advanced analyses) or R (for advanced analyses/statistical analyses), Tableau (for dashboards and visualisations) and Excel. Therefore, it makes sense for the top skills to comprise of these skills as they're more traditional and foundational skills.
+Generally, a traditional Data Analyst toolkit comprises of tools such as SQL (to query databases), Python (for advanced analyses) or R (for advanced analyses/statistical analyses), Tableau (for dashboards and visualisations) and Excel. Therefore, it makes sense for the top skills to comprise of these skills as they're more traditional and foundational skills.
 
 ## 3. The most in-demand skills for Data Analysts
 
@@ -190,7 +190,7 @@ LIMIT 5;
 
 **Query Breakdown:**
 
-The aim of this query was to identify the most in-demand skills for data analysts, by focusing on all job postings, rather than the top paying job postings.
+The aim of this query was to identify the most in-demand skills for Data Analysts, by focusing on all job postings, rather than the top paying job postings.
 
 To do this, I had to calculate how many times a skill showed up in the job postings (count of skills). Much of the query was similar in structure to the main query in Query #2, however instead of the top_paying_jobs CTE, I had to utilise inner joins to connect the job_postings_fact table with the skills_job_dim table, which would then connect to the skills_dim table to retrieve the skill names linked to each job posting. 
 
@@ -316,11 +316,11 @@ Finally, the demand for database technologies such as Oracle and NoSQL can be se
 
 # Conclusions and Recommendations:
 
-**1. Top paying data analyst jobs:**
+**1. Top paying Data Analyst jobs:**
 
 There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that job seekers have a variety of paths to choose from with scope for career and salary growth in Data Analytics. 
 
-**2. Required skills for the top paying data analyst jobs:**
+**2. Required skills for the top paying Data Analyst jobs:**
 
 The top paying Data Analyst jobs require proficiency in various skills with SQL being the top skill, followed by Python and Tableau. 
 
