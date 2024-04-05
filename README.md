@@ -74,9 +74,9 @@ LIMIT 10;
 
 **Query Breakdown:**
 
-In this query, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. Here, I chose to join the job_postings_fact table to the company_dim table using a left join, in order to to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I have aliased the "name" column as "company_name", to show that the name column is coming from the company_dim table. When two columns are in different tables but share the same name, it's important to mentioned the table name and/or alias the columns so the reader knows which table each column is coming from.
+Here, I am querying from the job_postings_fact table, as this table contains the relevant information to answer the question such as the job title and yearly salary. I joined the job_postings_fact table to the company_dim table using a left join, in order to retrieve the name of the companies offering the role, whilst keeping all the rows from the job_postings_fact table. I have aliased the "name" column as "company_name", to show that the name column is coming from the company_dim table. When two columns are in different tables but share the same name, it's important to mention the table name and/or alias the columns so the reader knows which table the columns are coming from. 
 
-In the WHERE clause, I chose to filter by Data Analyst roles only with the location set to "anywhere" (remote jobs), with the salary value not being a null. Finally, I ordered by the salary in descending order (highest to lowest) and limited the output to 10 rows.
+In the WHERE clause, I filtered by "Data Analyst" roles only with the location set to "anywhere" (remote jobs) and the salary value not being a null. Finally, I sorted the results by salary in descending order (highest to lowest) and limited the output to display only 10 rows.
 
 **Insights:**
 * **Broad Salary Range:** The top 10 paying Data Analyst roles range from $184,000 to $650,000 USD, indidicating strong salary potential in the field.
