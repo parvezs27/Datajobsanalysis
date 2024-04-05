@@ -2,7 +2,7 @@
 
 The field of data analytics is going through a rapid growth phase. The global data analytics market is expected to increase from $23 billion USD in 2019 to [$133 billion USD by 2026](https://www.globenewswire.com/news-release/2021/02/08/2171129/0/en/Data-Analytics-Market-to-Hit-USD-132-90-Billion-by-2026-North-America-Region-to-Spearhead-the-Global-Data-Analytics-Industry-with-the-Projected-CAGR-of-26-4.html).
 According to [The Future of Jobs 2020 Report](https://www.weforum.org/publications/the-future-of-jobs-report-2020/) developed by the World Economic Forum, more than 80% of the globally surveyed companies in the report have indicated that they'd have well adopted big data by 2025. 
-With data analytics swiftly becoming a core component of businesses globally, the demand for data professionals is also accelerating , with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for Data Analyst jobs, and decribing this growth as "much faster than the average for all occupations". 
+With data analytics swiftly becoming a core component of businesses globally, the demand for data professionals is also accelerating , with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for Data Analyst jobs, and describing this growth as "much faster than the average for all occupations". 
 
 Intrigued by these statistics and being in the data analytics field myself, I wanted to dive deeper into the data job market, with a particular focus on remote Data Analyst roles. Specifically, I was interested in exploring the various kinds of Data Analyst roles, the in-demand and high paying skills for a Data Analyst, as well as the salary ranges for Data Analyst roles in the current job market. 
 
@@ -140,11 +140,11 @@ Using Query #1 I was able to retrieve the top 10 highest paying remote Data Anal
 
 To obtain the skills, I utilised inner joins in the main query to connect the top_paying_jobs CTE to the skills_job_dim table, and then to connect the skills_job_dim table to the skills_dim table. 
 
-Out of the top 10 highest paying remote Data Analyst jobs which were identified earlier, the top two jobs (Data Analyst at Mantys & Director of Analytics at Meta), did not have have associated skills in the data. Hence, these were omitted from the output and visualisation , leaving only the next top 8 highest paying Data Analyst jobs in the results and visualisation.
+Out of the top 10 highest paying remote Data Analyst jobs which were identified earlier, the top two jobs (Data Analyst at Mantys & Director of Analytics at Meta), did not have associated skills in the data. Hence, these were omitted from the output and visualisation , leaving only the next top 8 highest paying Data Analyst jobs in the results and visualisation.
 
 **Visualisation:**
 
-The results of Query #2 were also exported as a CSV file from VS Studio Code and a visusalisation was created using Excel.
+The results of Query #2 were also exported as a CSV file from VS Studio Code and a visualisation was created using Excel.
 
 ![image](https://github.com/parvezs27/SQL_Data_Jobs_Analysis/assets/107979122/0d699c22-1923-489c-8392-71784c9d993f)
 
@@ -320,7 +320,7 @@ Below are the conclusions I derived from the analysis, as well as a recommendati
 
 **1. Top paying Data Analyst jobs:**
 
-There are a variety of top paying remote Data Analyst roles all the way upto Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way upto $650,000 USD. This indicates that Data Analysts have strong scope for career and salary growth, whilst having the flexbility to choose an area of interest for specialisation.
+There are a variety of top paying remote Data Analyst roles all the way up to Director level, ranging across various industries such as Telecommunications, Marketing and Health. The top paying remote Data Analyst roles offer a broad range of salaries, all the way up to $650,000 USD. This indicates that Data Analysts have strong scope for career and salary growth, whilst having the flexibility to choose an area of interest for specialisation.
 
 **2. Required skills for the top paying Data Analyst jobs:**
 
@@ -346,7 +346,7 @@ For those looking to enter into a Data Analyst role, a solid focus should be pla
 
 Through this project I was able to improve my SQL skills and gain valuable insights into the Data job market. Specifically, I was able to focus on key SQL skills such as merging tables (joins), using CTE's and aggregate functions (count, average). Additionally, I learned how to utilise Git, Visual Studio Code and Github harmoniously, in order to track projects and push/pull changes to local and remote repositories on Github.
 
-Some of the best practices I incoporated into this project:
+Some of the best practices I incorporated into this project:
 - Using leading comma's in the SELECT statements of queries, to clearly define new columns and to improve code readability and debugging e.g. identification of missing comma's.
 - Maintaining consistent code structure and alignment between clauses by using the tab key, in order to improve readability of code and build familiarity with code style. 
 - Aliasing table names to shorten code and improve readability.
