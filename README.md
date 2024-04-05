@@ -20,9 +20,9 @@ For this analysis, we are using a pre-cleaned dataset from Kaggle developed by L
 
 The dataset can be found [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search). 
 
-The SQL queries I used to create the tables can be found here: [sql_load folder](/sql_load/)
+The SQL queries I used to create the tables can be found here: [sql_load folder](/sql_tables_code/)
 
-The SQL queries I used to address the questions can be found here: [project_sql folder](/project_sql/)
+The SQL queries I used to address the questions can be found here: [project_sql folder](/sql_code/)
 
 Below is a simplified entity relationship diagram representing the dataset.
 
