@@ -4,7 +4,7 @@ The field of data analytics is going through a rapid growth phase. The global da
 According to [The Future of Jobs 2020 Report](https://www.weforum.org/publications/the-future-of-jobs-report-2020/) developed by the World Economic Forum, more than 80% of the globally surveyed companies in the report have indicated that they'd have well adopted big data by 2025. 
 With data analytics swiftly becoming a core component of businesses globally, the demand for data professionals is also accelerating , with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for data analyst jobs, and decribing this growth as "much faster than the average for all occupations". 
 
-Intrigued by these statistics and being in the data analytics field myslef, I wanted to dive deeper into the data job market, with a focus on remote data analyst roles. Specifically, I was interested in exploring the various kinds of data analyst roles, the in-demand and high paying skills for a data analyst, as well as the salary ranges for data analyst roles in the current job market. 
+Intrigued by these statistics and being in the data analytics field myself, I wanted to dive deeper into the data job market, with a particular focus on remote data analyst roles. Specifically, I was interested in exploring the various kinds of data analyst roles, the in-demand and high paying skills for a data analyst, as well as the salary ranges for data analyst roles in the current job market. 
 
 Through the analysis I will be addressing the following questions of interest:
 
