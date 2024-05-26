@@ -348,7 +348,7 @@ Through this project I was able to improve my SQL skills and gain valuable insig
 
 Some of the best practices I incorporated into this project:
 - Using leading comma's in the SELECT statements of queries, to clearly define new columns and to improve code readability and debugging e.g. identification of missing comma's.
-- Maintaining consistent code structure and alignment between clauses by using the tab key, in order to improve readability of code and build familiarity with code style. 
+- Maintaining consistent code structure and indentation, in order to improve readability of code and build familiarity with code style. 
 - Aliasing table names to shorten code and improve readability.
 - Adding code comments to help viewers/peers in understanding the purpose of the code/query.
 - Limiting results where needed and using CTE's to enhance query processing speed.
