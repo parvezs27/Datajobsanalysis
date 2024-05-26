@@ -342,7 +342,7 @@ The most optimal (high demand and high pay) skills comprise of Big Data, Cloud C
 
 For those looking to enter into a Data Analyst role, a solid focus should be placed on the most  foundational skills like SQL, Python and Tableau. These skills are the most in-demand skills for remote Data Analyst roles and are also associated with the top paying jobs. With time, as these foundational skills are developed and experience accumulates, gaining proficiency in specialised, in-demand technologies such as Big Data, Cloud Computing or Machine Learning, can help boost career opportunities and earning potential.
 
-**Learnings and Best Practices:**
+# **Learnings and Best Practices:**
 
 Through this project I was able to improve my SQL skills and gain valuable insights into the Data job market. Specifically, I was able to focus on key SQL skills such as merging tables (joins), using CTE's and aggregate functions (count, average). Additionally, I learned how to utilise Git, Visual Studio Code and Github harmoniously, in order to track projects and push/pull changes to local and remote repositories on Github.
 
