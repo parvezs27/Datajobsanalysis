@@ -1,6 +1,6 @@
 # Introduction
 
-The field of data analytics is going through a rapid growth phase. The global data analytics market is expected to increase from $23 billion USD in 2019 to [$133 billion USD by 2026](https://www.globenewswire.com/news-release/2021/02/08/2171129/0/en/Data-Analytics-Market-to-Hit-USD-132-90-Billion-by-2026-North-America-Region-to-Spearhead-the-Global-Data-Analytics-Industry-with-the-Projected-CAGR-of-26-4.html).
+Data Analytics is experiencing a rapid growth phase. The global data analytics market is expected to increase from $23 billion USD in 2019 to [$133 billion USD by 2026](https://www.globenewswire.com/news-release/2021/02/08/2171129/0/en/Data-Analytics-Market-to-Hit-USD-132-90-Billion-by-2026-North-America-Region-to-Spearhead-the-Global-Data-Analytics-Industry-with-the-Projected-CAGR-of-26-4.html).
 According to [The Future of Jobs 2020 Report](https://www.weforum.org/publications/the-future-of-jobs-report-2020/) developed by the World Economic Forum, more than 80% of the globally surveyed companies in the report have indicated that they'd have well adopted big data by 2025. 
 With data analytics swiftly becoming a core component of businesses globally, the demand for data professionals is also accelerating , with the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/math/operations-research-analysts.htm) estimating a growth of 23% from 2022 to 2032 for Data Analyst jobs, and describing this growth as "much faster than the average for all occupations". 
 
@@ -346,12 +346,12 @@ For those looking to enter into a Data Analyst role, a solid focus should be pla
 
 Through this project I was able to improve my SQL skills and gain valuable insights into the Data job market. Specifically, I was able to focus on key SQL skills such as merging tables (joins), using CTE's and aggregate functions (count, average). Additionally, I learned how to utilise Git, Visual Studio Code and Github harmoniously, in order to track projects and push/pull changes to local and remote repositories on Github.
 
-Some of the best practices I incorporated into this project:
-- Using leading comma's in the SELECT statements of queries, to clearly define new columns and to improve code readability and debugging e.g. identification of missing comma's.
+The best practices I incorporated into this project:
+- Utilising leading comma's in SELECT statements, to clearly define new columns and to improve code readability and debugging e.g. identification of missing comma's.
 - Maintaining consistent code structure and indentation, in order to improve readability of code and build familiarity with code style. 
 - Aliasing table names to shorten code and improve readability.
 - Adding code comments to help viewers/peers in understanding the purpose of the code/query.
 - Limiting results where needed and using CTE's to enhance query processing speed.
 - Utilising simple, minimalistic bar charts to clearly and easily communicate insights with minimal cognitive load.
-- Documenting key project information into a spreadsheet such as commencement date, completion date, problems and how the problems were resolved. This is a good practice to have in the real world when working on deliverables and projects. 
+- Documenting the project, including information such as the purpose of the project, problems and how these were solved etc. 
 
